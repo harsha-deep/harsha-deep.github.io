@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>Knapsack.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@53e0c50_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@53e0c50_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package org.example;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@53e0c50_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@53e0c50_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@53e0c50_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@53e0c50_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>public class Knapsack {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@53e0c50_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@53e0c50_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@53e0c50_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@53e0c50_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static int knapsack(int[] weights, int[] values, int capacity) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@53e0c50_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@53e0c50_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        int n = weights.length;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@53e0c50_7'/>
+7
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@53e0c50_7'>4</a>
+<span>
+1. knapsack : Substituted 1 with 0 &rarr; KILLED<br/>
+2. knapsack : Replaced integer addition with subtraction &rarr; KILLED<br/>
+3. knapsack : Substituted 1 with 0 &rarr; KILLED<br/>
+4. knapsack : Replaced integer addition with subtraction &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        int[][] dp = new int[n + 1][capacity + 1];</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@53e0c50_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@53e0c50_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@53e0c50_9'/>
+9
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@53e0c50_9'>5</a>
+<span>
+1. knapsack : changed conditional boundary &rarr; KILLED<br/>
+2. knapsack : removed conditional - replaced comparison check with true &rarr; KILLED<br/>
+3. knapsack : negated conditional &rarr; KILLED<br/>
+4. knapsack : removed conditional - replaced comparison check with false &rarr; KILLED<br/>
+5. knapsack : Substituted 1 with 0 &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        for (int i = 1; i &#60;= n; i++) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@53e0c50_10'/>
+10
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@53e0c50_10'>5</a>
+<span>
+1. knapsack : Substituted 0 with 1 &rarr; SURVIVED<br/>
+2. knapsack : removed conditional - replaced comparison check with false &rarr; KILLED<br/>
+3. knapsack : removed conditional - replaced comparison check with true &rarr; KILLED<br/>
+4. knapsack : changed conditional boundary &rarr; KILLED<br/>
+5. knapsack : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>            for (int w = 0; w &#60;= capacity; w++) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@53e0c50_11'/>
+11
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@53e0c50_11'>6</a>
+<span>
+1. knapsack : changed conditional boundary &rarr; KILLED<br/>
+2. knapsack : removed conditional - replaced comparison check with true &rarr; KILLED<br/>
+3. knapsack : negated conditional &rarr; KILLED<br/>
+4. knapsack : Replaced integer subtraction with addition &rarr; KILLED<br/>
+5. knapsack : removed conditional - replaced comparison check with false &rarr; KILLED<br/>
+6. knapsack : Substituted 1 with 0 &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                if (weights[i - 1] &#60;= w) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@53e0c50_12'/>
+12
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@53e0c50_12'>12</a>
+<span>
+1. knapsack : Replaced integer subtraction with addition &rarr; KILLED<br/>
+2. knapsack : Replaced integer subtraction with addition &rarr; KILLED<br/>
+3. knapsack : Replaced integer addition with subtraction &rarr; KILLED<br/>
+4. knapsack : Replaced integer subtraction with addition &rarr; KILLED<br/>
+5. knapsack : Substituted 1 with 0 &rarr; KILLED<br/>
+6. knapsack : Replaced integer subtraction with addition &rarr; KILLED<br/>
+7. knapsack : Substituted 1 with 0 &rarr; KILLED<br/>
+8. knapsack : removed call to java/lang/Math::max &rarr; KILLED<br/>
+9. knapsack : replaced call to java/lang/Math::max with argument &rarr; KILLED<br/>
+10. knapsack : Substituted 1 with 0 &rarr; KILLED<br/>
+11. knapsack : Substituted 1 with 0 &rarr; KILLED<br/>
+12. knapsack : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                    dp[i][w] = Math.max(values[i - 1] + dp[i - 1][w - weights[i - 1]], dp[i - 1][w]);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@53e0c50_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@53e0c50_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                } else {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@53e0c50_14'/>
+14
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@53e0c50_14'>2</a>
+<span>
+1. knapsack : Substituted 1 with 0 &rarr; SURVIVED<br/>
+2. knapsack : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>                    dp[i][w] = dp[i - 1][w];</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@53e0c50_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@53e0c50_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@53e0c50_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@53e0c50_16'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@53e0c50_17'/>
+17
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@53e0c50_17'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@53e0c50_18'/>
+18
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@53e0c50_18'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@53e0c50_19'/>
+19
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@53e0c50_19'>1</a>
+<span>
+1. knapsack : replaced int return with 0 for org/example/Knapsack::knapsack &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return dp[n][capacity];</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@53e0c50_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@53e0c50_20'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@53e0c50_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@53e0c50_21'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@53e0c50_7'>7</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@53e0c50_7'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>knapsack<br/><b>Killed by : </b>org.example.KnapsackTest.testKnapsackCase2(org.example.KnapsackTest)</span></span> Substituted 1 with 0 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>knapsack<br/><b>Killed by : </b>org.example.KnapsackTest.testKnapsackCase2(org.example.KnapsackTest)</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>knapsack<br/><b>Killed by : </b>org.example.KnapsackTest.testKnapsackCase2(org.example.KnapsackTest)</span></span> Substituted 1 with 0 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>knapsack<br/><b>Killed by : </b>org.example.KnapsackTest.testKnapsackCase2(org.example.KnapsackTest)</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@53e0c50_9'>9</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@53e0c50_9'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>knapsack<br/><b>Killed by : </b>org.example.KnapsackTest.testKnapsackCase2(org.example.KnapsackTest)</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>knapsack<br/><b>Killed by : </b>org.example.KnapsackTest.testKnapsackCase2(org.example.KnapsackTest)</span></span> removed conditional - replaced comparison check with true &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>knapsack<br/><b>Killed by : </b>org.example.KnapsackTest.testKnapsackCase2(org.example.KnapsackTest)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>knapsack<br/><b>Killed by : </b>org.example.KnapsackTest.testKnapsackCase2(org.example.KnapsackTest)</span></span> removed conditional - replaced comparison check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>knapsack<br/><b>Killed by : </b>org.example.KnapsackTest.testKnapsackCase2(org.example.KnapsackTest)</span></span> Substituted 1 with 0 &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@53e0c50_10'>10</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@53e0c50_10'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>knapsack<br/><b>Killed by : </b>none</span></span> Substituted 0 with 1 &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>knapsack<br/><b>Killed by : </b>org.example.KnapsackTest.testKnapsackCase2(org.example.KnapsackTest)</span></span> removed conditional - replaced comparison check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>knapsack<br/><b>Killed by : </b>org.example.KnapsackTest.testKnapsackCase2(org.example.KnapsackTest)</span></span> removed conditional - replaced comparison check with true &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>knapsack<br/><b>Killed by : </b>org.example.KnapsackTest.testKnapsackCase2(org.example.KnapsackTest)</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>knapsack<br/><b>Killed by : </b>org.example.KnapsackTest.testKnapsackCase2(org.example.KnapsackTest)</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@53e0c50_11'>11</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@53e0c50_11'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>knapsack<br/><b>Killed by : </b>org.example.KnapsackTest.testKnapsackCase1(org.example.KnapsackTest)</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>knapsack<br/><b>Killed by : </b>org.example.KnapsackTest.testKnapsackCase2(org.example.KnapsackTest)</span></span> removed conditional - replaced comparison check with true &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>knapsack<br/><b>Killed by : </b>org.example.KnapsackTest.testKnapsackCase2(org.example.KnapsackTest)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>knapsack<br/><b>Killed by : </b>org.example.KnapsackTest.testKnapsackCase2(org.example.KnapsackTest)</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>knapsack<br/><b>Killed by : </b>org.example.KnapsackTest.testKnapsackCase2(org.example.KnapsackTest)</span></span> removed conditional - replaced comparison check with false &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>knapsack<br/><b>Killed by : </b>org.example.KnapsackTest.testKnapsackCase2(org.example.KnapsackTest)</span></span> Substituted 1 with 0 &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@53e0c50_12'>12</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@53e0c50_12'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>knapsack<br/><b>Killed by : </b>org.example.KnapsackTest.testKnapsackCase2(org.example.KnapsackTest)</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>knapsack<br/><b>Killed by : </b>org.example.KnapsackTest.testKnapsackCase2(org.example.KnapsackTest)</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>knapsack<br/><b>Killed by : </b>org.example.KnapsackTest.testKnapsackCase2(org.example.KnapsackTest)</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>knapsack<br/><b>Killed by : </b>org.example.KnapsackTest.testKnapsackCase2(org.example.KnapsackTest)</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>knapsack<br/><b>Killed by : </b>org.example.KnapsackTest.testKnapsackCase2(org.example.KnapsackTest)</span></span> Substituted 1 with 0 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>knapsack<br/><b>Killed by : </b>org.example.KnapsackTest.testKnapsackCase2(org.example.KnapsackTest)</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>knapsack<br/><b>Killed by : </b>org.example.KnapsackTest.testKnapsackCase2(org.example.KnapsackTest)</span></span> Substituted 1 with 0 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>knapsack<br/><b>Killed by : </b>org.example.KnapsackTest.testKnapsackCase2(org.example.KnapsackTest)</span></span> removed call to java/lang/Math::max &rarr; KILLED</p> <p class='KILLED'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>knapsack<br/><b>Killed by : </b>org.example.KnapsackTest.testKnapsackCase2(org.example.KnapsackTest)</span></span> replaced call to java/lang/Math::max with argument &rarr; KILLED</p> <p class='KILLED'><span class='pop'>10.<span><b>10</b><br/><b>Location : </b>knapsack<br/><b>Killed by : </b>org.example.KnapsackTest.testKnapsackCase2(org.example.KnapsackTest)</span></span> Substituted 1 with 0 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>11.<span><b>11</b><br/><b>Location : </b>knapsack<br/><b>Killed by : </b>org.example.KnapsackTest.testKnapsackCase2(org.example.KnapsackTest)</span></span> Substituted 1 with 0 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>12.<span><b>12</b><br/><b>Location : </b>knapsack<br/><b>Killed by : </b>org.example.KnapsackTest.testKnapsackCase2(org.example.KnapsackTest)</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@53e0c50_14'>14</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@53e0c50_14'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>knapsack<br/><b>Killed by : </b>none</span></span> Substituted 1 with 0 &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>knapsack<br/><b>Killed by : </b>org.example.KnapsackTest.testKnapsackCase2(org.example.KnapsackTest)</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@53e0c50_19'>19</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@53e0c50_19'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>knapsack<br/><b>Killed by : </b>org.example.KnapsackTest.testKnapsackCase2(org.example.KnapsackTest)</span></span> replaced int return with 0 for org/example/Knapsack::knapsack &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+<li class='mutator'>CONDITIONALS_BOUNDARY</li>
+<li class='mutator'>CONSTRUCTOR_CALLS</li>
+<li class='mutator'>EMPTY_RETURNS</li>
+<li class='mutator'>EXPERIMENTAL_ARGUMENT_PROPAGATION</li>
+<li class='mutator'>EXPERIMENTAL_BIG_DECIMAL</li>
+<li class='mutator'>EXPERIMENTAL_BIG_INTEGER</li>
+<li class='mutator'>EXPERIMENTAL_MEMBER_VARIABLE</li>
+<li class='mutator'>EXPERIMENTAL_NAKED_RECEIVER</li>
+<li class='mutator'>EXPERIMENTAL_REMOVE_SWITCH_MUTATOR_[0-99]</li>
+<li class='mutator'>EXPERIMENTAL_SWITCH</li>
+<li class='mutator'>FALSE_RETURNS</li>
+<li class='mutator'>INCREMENTS</li>
+<li class='mutator'>INLINE_CONSTS</li>
+<li class='mutator'>INVERT_NEGS</li>
+<li class='mutator'>MATH</li>
+<li class='mutator'>NEGATE_CONDITIONALS</li>
+<li class='mutator'>NON_VOID_METHOD_CALLS</li>
+<li class='mutator'>NULL_RETURNS</li>
+<li class='mutator'>PRIMITIVE_RETURNS</li>
+<li class='mutator'>REMOVE_CONDITIONALS_EQUAL_ELSE</li>
+<li class='mutator'>REMOVE_CONDITIONALS_EQUAL_IF</li>
+<li class='mutator'>REMOVE_CONDITIONALS_ORDER_ELSE</li>
+<li class='mutator'>REMOVE_CONDITIONALS_ORDER_IF</li>
+<li class='mutator'>REMOVE_INCREMENTS</li>
+<li class='mutator'>TRUE_RETURNS</li>
+<li class='mutator'>VOID_METHOD_CALLS</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>org.example.KnapsackTest.testKnapsackCase2(org.example.KnapsackTest) (0 ms)</li><li>org.example.KnapsackTest.testKnapsackCase1(org.example.KnapsackTest) (1 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='https://pitest.org'>PIT</a> 1.15.3
+
+</body>
+</html>
